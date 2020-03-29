@@ -8,23 +8,66 @@
 
 	<title>40 en Cuarentena</title>
 
-</head>
-<body>
-
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="public/css/style.css">
 
-<div class="container">
-	<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<div class="title-moni">
-				<h1>40 EN CUARENTENA</h1>				
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="title-moni">
+					<h1>40 EN CUARENTENA</h1>				
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-	
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="text-moni">
+					<h2>Feliz Cumpleaños Moni</h2>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="row">
+					<button onclick="playVid()">Ver Video</button>
+				</div>
+				<div class="row">
+					<div class="video-moni">
+						<video id="idvideo" src="public/video/rodri.mp4" height="480" autoplay loop pause></video>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+	<script type="text/javascript">
+		
+		var vid = document.getElementById("idvideo");
+
+		function playVid() {
+		    vid.play();
+		}
+
+		function pauseVid() {
+		    vid.pause();
+		}
+
+	</script>
 
 </body>
 </html>

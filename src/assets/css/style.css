@@ -25,11 +25,33 @@
     unicode-range: "U+0-10FFFF";
 }
 
+footer {
+    background-color: #141414;
+    margin-top: 50px;
+    height: 150px;
+    padding-top: 25px;
+}
+
 .title-moni {
 	text-align: center;
 }
 
 .title-moni h1 {
-	font-size: 118px;
 	font-family: 'Caveat Brush';
+	font-size: 11vw;
+	color: black;
+}
+
+.text-moni {
+
+}
+
+.text-moni h2 {
+	font-family: 'Raleway';
+	font-size: 3vw;
+	color: black;
+}
+
+.video-moni {
+
 }
