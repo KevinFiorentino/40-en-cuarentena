@@ -25,6 +25,10 @@
     unicode-range: "U+0-10FFFF";
 }
 
+header {
+    border-top: #ffbc00 25px solid;    
+}
+
 footer {
     background-color: #141414;
     margin-top: 50px;
@@ -55,6 +59,11 @@ footer {
 .btn-moni {
 	width: 100%;
 	margin: 15px;
+    background-color: #ffbc00;
+    border: 1px solid #ffbc00;
+    font-family: 'Raleway';
+    color: black;
+    font-weight: bold;
 }
 
 #idvideo {
