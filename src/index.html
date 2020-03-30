@@ -48,7 +48,7 @@
 				</div>
 				<div class="container">
 					<div class="video-moni">
-						<video id="idvideo" src="public/video/rodri.mp4" height="480" autoplay loop pause></video>
+						<video id="idvideo" src="public/video/video-moni.mp4" height="480" autoplay loop pause></video>
 					</div>
 				</div>
 
@@ -60,6 +60,50 @@
 
 	<div class="container">
 		<div class="row">
+
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="destacados-title">
+					<h1>Destacados</h1>
+				</div>
+			</div>
+
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="swiper-container swiper-destacados">
+					<div class="swiper-wrapper">
+
+						<div class="swiper-slide">
+							<img class="img-fluid" src="public/img/1.jpeg">
+						</div>
+
+						<div class="swiper-slide">
+							<img class="img-fluid" src="public/img/2.jpeg">
+						</div>
+
+						<div class="swiper-slide">
+							<img class="img-fluid" src="public/img/3.jpeg">
+						</div>
+
+						<div class="swiper-slide">
+							<img class="img-fluid" src="public/img/4.jpeg">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br><br><br>
+
+	<div class="container">
+		<div class="row">
+
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="destacados-title">
+					<h1>Descubrila</h1>
+				</div>
+			</div>
+
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<div class="swiper-container swiper-descubrila">
 					<div class="swiper-wrapper">
@@ -116,6 +160,33 @@
 
 	<script type="text/javascript">
 		
+        var swiper = new Swiper('.swiper-destacados', {
+	    	//Default parameters
+		    slidesPerView: 3,
+		    spaceBetween: 10,
+		    loop: false,
+		    loopAdditionalSlides: 1,
+		    effect: "slide",
+		    //Responsive
+		    breakpoints: {
+			    //When window width is <= 512px
+			    512: {
+			      slidesPerView: 2.1,
+			      spaceBetween: 5,
+			    },
+			    //When window width is <= 768px
+			    768: {
+			      slidesPerView: 2.5,
+			      spaceBetween: 5,
+			    },
+			    //When window width is <= 1192px
+			    1192: {
+			      slidesPerView: 3,
+			      spaceBetween: 10
+			    }
+			},
+	    });
+
         var swiper = new Swiper('.swiper-descubrila', {
 	    	//Default parameters
 		    slidesPerView: 3,
