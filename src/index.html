@@ -146,6 +146,8 @@
 					</div>
 				</div>
 				<div class="swiper-pagination1"></div>
+			    <div class="swiper-button-next1"></div>
+			    <div class="swiper-button-prev1"></div>
 			</div>
 		</div>
 	</div>
@@ -213,6 +215,8 @@
 					</div>
 				</div>
 				<div class="swiper-pagination2"></div>
+				<div class="swiper-button-next2"></div>
+    			<div class="swiper-button-prev2"></div>
 			</div>
 		</div>
 	</div>
@@ -231,12 +235,20 @@
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-				<button class="btn btn-primary btn-moni" onclick="playVid2()">Ver Video</button>
-				<video id="idvideo2" src="public/video/video2.mp4" height="480" pause></video>
+				<div class="row">
+					<button class="btn btn-primary btn-moni" onclick="playVid2()">Ver Video</button>
+				</div>
+				<div class="container">
+					<video id="idvideo2" src="public/video/video2.mp4" height="480" pause></video>
+				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-				<button class="btn btn-primary btn-moni" onclick="playVid3()">Ver Video</button>
-				<video id="idvideo3" src="public/video/video3.mp4" height="480" pause></video>
+				<div class="row">
+					<button class="btn btn-primary btn-moni" onclick="playVid3()">Ver Video</button>
+				</div>
+				<div class="container">
+					<video id="idvideo3" src="public/video/video3.mp4" height="480" pause></video>
+				</div>
 			</div>
 
 		</div>
@@ -318,6 +330,10 @@
 			pagination: {
 	        	el: '.swiper-pagination1',
 	      	},
+	      	navigation: {
+	        	nextEl: '.swiper-button-next1',
+	        	prevEl: '.swiper-button-prev1',
+	      	},
 	    });
 
         var swiper = new Swiper('.swiper-descubrila', {
@@ -347,6 +363,10 @@
 			},
 			pagination: {
 	        	el: '.swiper-pagination2',
+	      	},
+	      	navigation: {
+	        	nextEl: '.swiper-button-next2',
+	        	prevEl: '.swiper-button-prev2',
 	      	},
 	    });
 

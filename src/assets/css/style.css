@@ -96,7 +96,7 @@ footer {
 }
 
 .swiper-pagination1, .swiper-pagination2 {
-    left: 45%;
+    text-align: center;
 }
 
 .text-end {
