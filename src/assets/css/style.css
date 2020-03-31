@@ -41,7 +41,6 @@ header {
 footer {
     background-color: #141414;
     margin-top: 50px;
-    height: 150px;
     padding-top: 25px;
 }
 
@@ -200,6 +199,12 @@ h2 {
 .swiper-slide:hover .descubrila-caption .descubrila-info, .swiper-slide a:focus .descubrila-caption .descubrila-info {
     top: 40%;
     transition: 1.5s;
+}
+
+.text-copy p {
+    font-family: Raleway;
+    font-size: 0.8vw;
+    color: white;
 }
 
 @media screen and (max-width: 1192px) {
