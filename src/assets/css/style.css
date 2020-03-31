@@ -75,7 +75,7 @@ footer {
     font-weight: bold;
 }
 
-#idvideo {
+#idvideoprincipal, #idvideo1, #idvideo2, #idvideo3 {
 	margin-left: auto;
     margin-right: auto;
     display: block;	
@@ -94,3 +94,123 @@ footer {
     font-size: 9vw;
     color: black;
 }
+
+    .descubrila-title {
+        text-align: center;
+    }
+
+    .descubrila-title h1 {
+        font-family: Vollkorn;
+        font-size: 104px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .descubrila-caption {
+        color: white;
+        text-align: center;
+        position: absolute;
+        z-index: 1;
+        top: 72%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,.9);
+        opacity: 0.8;
+        transition: 0.8s;
+    }
+
+    @media screen and (min-width: 1400px) {
+        .descubrila-caption {
+            top: 78%;
+        }      
+    }
+
+    .descubrila-info {
+        position: relative;
+        text-align: center;  
+        top: 0;
+        transition: 1.5s;
+    }
+
+    .descubrila-info h3 {
+        font-family: Raleway !important;
+        font-weight: 800;
+        color: white;
+        margin-top: 15px;
+        line-height: 20px;
+        margin-right: 7px;
+        margin-left: 7px;
+    }
+
+    .swiper-slide:hover .descubrila-caption, .swiper-slide a:focus .descubrila-caption {
+        top: 0;
+        background:rgba(0,0,0,.7);
+        transition: 0.8s;
+    }
+
+    .swiper-slide:hover .descubrila-caption .descubrila-info, .swiper-slide a:focus .descubrila-caption .descubrila-info {
+        top: 40%;
+        transition: 1.5s;
+    }
+
+    @media screen and (max-width: 1192px) {
+        .descubrila-caption {
+            top: 72%;
+        }
+        .swiper-slide:hover .descubrila-caption .descubrila-info {
+            top: 30%;
+        }
+        .descubrila-info h3 {
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width: 968px) {
+        .descubrila-caption {
+            top: 0;
+            background:rgba(0,0,0,.4);
+        }
+        .descubrila-info {
+            top: 30%;
+            filter: none;
+        }
+        .descubrila-info h3 {
+            font-size: 18px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .descubrila-title h1 {
+            font-size: 74px;
+        }
+        .descubrila-info {
+            top: 36%;
+        }
+        .descubrila-info h3 {
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width: 676px) {
+        .descubrila-info {
+            top: 30%;
+        }
+    }
+    @media screen and (max-width: 512px) {
+        .descubrila-title h1 {
+            font-size: 64px;
+        }
+    }
+    @media screen and (max-width: 425px) {
+        .descubrila-info h3 {
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width: 375px) {
+        .descubrila-title h1 {
+            font-size: 44px;
+        }
+    }
+    @media screen and (max-width: 350px) {
+        .descubrila-info {
+            top: 25%;
+        }
+    }

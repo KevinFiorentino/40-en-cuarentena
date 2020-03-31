@@ -44,11 +44,11 @@
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<div class="row">
-					<button class="btn btn-primary btn-moni" onclick="playVid()">Ver Video</button>
+					<button class="btn btn-primary btn-moni" onclick="playVidPrincipal()">Ver Video</button>
 				</div>
 				<div class="container">
 					<div class="video-moni">
-						<video id="idvideo" src="public/video/video-moni.mp4" height="480" autoplay loop pause></video>
+						<video id="idvideoprincipal" src="public/video/video-moni.mp4" height="480" pause></video>
 					</div>
 				</div>
 
@@ -72,7 +72,12 @@
 					<div class="swiper-wrapper">
 
 						<div class="swiper-slide">
-							<img class="img-fluid" src="public/img/1.jpeg">
+                            <img class="img-fluid" src="public/img/1.jpeg">
+                            <div class="descubrila-caption">
+                               <div class="descubrila-info">
+                                  <h3>MONIIIII</h3>
+                               </div>
+                            </div>
 						</div>
 
 						<div class="swiper-slide">
@@ -138,6 +143,25 @@
 		</div>
 	</div>
 
+	<div class="container">
+		<div class="row">
+
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<button class="btn btn-primary btn-moni" onclick="playVid1()">Ver Video</button>
+				<video id="idvideo1" src="public/video/video.MOV" height="480" autoplay pause></video>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<button class="btn btn-primary btn-moni" onclick="playVid2()">Ver Video</button>
+				<video id="idvideo2" src="public/video/video.MOV" height="480" autoplay pause></video>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<button class="btn btn-primary btn-moni" onclick="playVid3()">Ver Video</button>
+				<video id="idvideo3" src="public/video/video.MOV" height="480" autoplay pause></video>
+			</div>
+
+		</div>
+	</div>
+
 	<footer>
 		<div class="container">
 			<div class="row">
@@ -152,16 +176,44 @@
 
 	<script type="text/javascript">
 		
-		var vid = document.getElementById("idvideo");
+		var vidprincipal = document.getElementById("idvideoprincipal");
+		vidprincipal.pause();
 
-		vid.pause();
+		var vid1 = document.getElementById("idvideo1");
+		vid1.pause();
 
-		function playVid() {
+		var vid2 = document.getElementById("idvideo2");
+		vid2.pause();
+
+		var vid3 = document.getElementById("idvideo3");
+		vid3.pause();
+
+		function playVidPrincipal() {
 		    vid.play();
 		}
-
-		function pauseVid() {
+		function pauseVidPrincipal() {
 		    vid.pause();
+		}
+
+		function playVid1() {
+		    vid1.play();
+		}
+		function pauseVid1() {
+		    vid1.pause();
+		}
+
+		function playVid2() {
+		    vid2.play();
+		}
+		function pauseVid2() {
+		    vid2.pause();
+		}
+
+		function playVid3() {
+		    vid3.play();
+		}
+		function pauseVid3() {
+		    vid3.pause();
 		}
 
 	</script>
