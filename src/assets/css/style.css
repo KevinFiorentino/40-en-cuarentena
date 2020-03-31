@@ -45,6 +45,13 @@ footer {
     padding-top: 25px;
 }
 
+h2 {
+    font-family: Raleway;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
 .title-moni {
 	text-align: center;
 }
@@ -81,10 +88,6 @@ footer {
     display: block;	
 }
 
-.video-moni {
-
-}
-
 .destacados-title {
     text-align: center;
 }
@@ -107,122 +110,141 @@ footer {
     text-align: center;
 }
 
-    .descubrila-title {
-        text-align: center;
-    }
 
-    .descubrila-title h1 {
-        font-family: Vollkorn;
-        font-size: 104px;
-        font-weight: bold;
-        color: black;
-    }
+.swiper-button-prev,
+.swiper-button-next {
+    -webkit-transform:scale(2);
+    transform:scale(2);
+    transition: 0.4s;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    -webkit-transform:scale(2.1);
+    transform:scale(2.1);
+    transition: 0.4s;
+}
 
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    -webkit-transform:scale(1.6);
+    transform:scale(1.6);
+    transition: 0.4s;
+}
+
+.descubrila-title {
+    text-align: center;
+}
+
+.descubrila-title h1 {
+    font-family: Vollkorn;
+    font-size: 104px;
+    font-weight: bold;
+    color: black;
+}
+
+.descubrila-caption {
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.9);
+    opacity: 0.8;
+    transition: 0.8s;
+}
+
+@media screen and (min-width: 1400px) {
     .descubrila-caption {
-        color: white;
-        text-align: center;
-        position: absolute;
-        z-index: 1;
-        top: 80%;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0,0,0,.9);
-        opacity: 0.8;
-        transition: 0.8s;
-    }
+        top: 78%;
+    }      
+}
 
-    @media screen and (min-width: 1400px) {
-        .descubrila-caption {
-            top: 78%;
-        }      
-    }
+.descubrila-info {
+    position: relative;
+    text-align: center;  
+    top: 0;
+    transition: 1.5s;
+}
 
-    .descubrila-info {
-        position: relative;
-        text-align: center;  
-        top: 0;
-        transition: 1.5s;
-    }
+.descubrila-info h3 {
+    font-family: Raleway !important;
+    font-weight: 800;
+    color: white;
+    margin-top: 15px;
+    line-height: 20px;
+    margin-right: 7px;
+    margin-left: 7px;
+}
 
+.swiper-slide:hover .descubrila-caption, .swiper-slide a:focus .descubrila-caption {
+    top: 0;
+    background:rgba(0,0,0,.7);
+    transition: 0.8s;
+}
+
+.swiper-slide:hover .descubrila-caption .descubrila-info, .swiper-slide a:focus .descubrila-caption .descubrila-info {
+    top: 40%;
+    transition: 1.5s;
+}
+
+@media screen and (max-width: 1192px) {
+    .descubrila-caption {
+        top: 72%;
+    }
+    .swiper-slide:hover .descubrila-caption .descubrila-info {
+        top: 30%;
+    }
     .descubrila-info h3 {
-        font-family: Raleway !important;
-        font-weight: 800;
-        color: white;
-        margin-top: 15px;
-        line-height: 20px;
-        margin-right: 7px;
-        margin-left: 7px;
+        font-size: 20px;
     }
-
-    .swiper-slide:hover .descubrila-caption, .swiper-slide a:focus .descubrila-caption {
+}
+@media screen and (max-width: 968px) {
+    .descubrila-caption {
         top: 0;
-        background:rgba(0,0,0,.7);
-        transition: 0.8s;
+        background:rgba(0,0,0,.4);
     }
-
-    .swiper-slide:hover .descubrila-caption .descubrila-info, .swiper-slide a:focus .descubrila-caption .descubrila-info {
-        top: 40%;
-        transition: 1.5s;
+    .descubrila-info {
+        top: 30%;
+        filter: none;
     }
-
-    @media screen and (max-width: 1192px) {
-        .descubrila-caption {
-            top: 72%;
-        }
-        .swiper-slide:hover .descubrila-caption .descubrila-info {
-            top: 30%;
-        }
-        .descubrila-info h3 {
-            font-size: 20px;
-        }
+    .descubrila-info h3 {
+        font-size: 18px;
     }
-    @media screen and (max-width: 968px) {
-        .descubrila-caption {
-            top: 0;
-            background:rgba(0,0,0,.4);
-        }
-        .descubrila-info {
-            top: 30%;
-            filter: none;
-        }
-        .descubrila-info h3 {
-            font-size: 18px;
-        }
+}
+@media screen and (max-width: 768px) {
+    .descubrila-title h1 {
+        font-size: 74px;
     }
-    @media screen and (max-width: 768px) {
-        .descubrila-title h1 {
-            font-size: 74px;
-        }
-        .descubrila-info {
-            top: 36%;
-        }
-        .descubrila-info h3 {
-            font-size: 20px;
-        }
+    .descubrila-info {
+        top: 36%;
     }
-    @media screen and (max-width: 676px) {
-        .descubrila-info {
-            top: 30%;
-        }
+    .descubrila-info h3 {
+        font-size: 20px;
     }
-    @media screen and (max-width: 512px) {
-        .descubrila-title h1 {
-            font-size: 64px;
-        }
+}
+@media screen and (max-width: 676px) {
+    .descubrila-info {
+        top: 30%;
     }
-    @media screen and (max-width: 425px) {
-        .descubrila-info h3 {
-            font-size: 16px;
-        }
+}
+@media screen and (max-width: 512px) {
+    .descubrila-title h1 {
+        font-size: 64px;
     }
-    @media screen and (max-width: 375px) {
-        .descubrila-title h1 {
-            font-size: 44px;
-        }
+}
+@media screen and (max-width: 425px) {
+    .descubrila-info h3 {
+        font-size: 16px;
     }
-    @media screen and (max-width: 350px) {
-        .descubrila-info {
-            top: 25%;
-        }
+}
+@media screen and (max-width: 375px) {
+    .descubrila-title h1 {
+        font-size: 44px;
     }
+}
+@media screen and (max-width: 350px) {
+    .descubrila-info {
+        top: 25%;
+    }
+}
